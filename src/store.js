@@ -10,7 +10,6 @@ export const store = configureStore ({
 
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from './counterSlice'
-import Counter from "./counter";
 
 
 export const store = configureStore({
