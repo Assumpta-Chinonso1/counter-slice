@@ -5,8 +5,9 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 
 export default function Counter() {
 
-    const count = useSelector((state) => state.counter.value)
-    const dispatchh = useDispatch()
+
+const count = useSelector((state) => state.counter.value)
+ const dispatchh = useDispatch()
 
 
 return(
