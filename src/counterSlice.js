@@ -1,49 +1,42 @@
-/*import { createSlice } from "@reduxjs/toolkit";
-
-const counterSlice = createSlice({
-    name: "counter",
-    initialState: {value: 0},
-    reducers: {
-        increase: (state) => {
-            state.value += 1;
-
-        },
-
-        decrease: (state) => {
-            state.value -= 1;
-
-        },
-        reset: (state) => {
-            state.value = 0
-        }
-    }
-});
-
-export const { decrease, increase, reset} = counterSlice.actions
-export default counterSlice.reducer*/
-
-
-
 import { createSlice } from "@reduxjs/toolkit";
 
+//////////////////// COUNTER SLICE ////////////////////
 const counterSlice = createSlice({
-    name: "counter",
-    initialState: {value: 0},
-    reducers: {
-        increase: (state) => {
-            state.value += 1
-        },
-        decrease: (state) => {
-            state.value -= 1
-        },
-        reset: (state) => {
-            state.value = 0
-        }
-    }
-})
+  name: "counter",
+  initialState: { value: 0 },
+  reducers: {
+    increase: (state) => {
+      state.value += 1;
+    },
+    decrease: (state) => {
+      state.value -= 1;
+    },
+    reset: (state) => {
+      state.value = 0;
+    },
+  },
+});
 
-export const {decrease, increase, reset} = counterSlice.actions
-export default counterSlice.reducer
+export const { increase, decrease, reset } = counterSlice.actions;
+
+
+//////////////////// THEME SLICE ////////////////////
+const themeSlice = createSlice({
+  name: "theme",
+  initialState: { mode: "light" },
+  reducers: {
+    toggleTheme: (state) => {
+      state.mode = state.mode === "light" ? "dark" : "light";
+    },
+  },
+});
+
+export const { toggleTheme } = themeSlice.actions;
+
+
+//////////////////// EXPORT REDUCERS ////////////////////
+export const counterReducer = counterSlice.reducer;
+export const themeReducer = themeSlice.reducer;
 
 
 
