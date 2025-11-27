@@ -53,7 +53,7 @@ export default function Counter() {
           </button>
 
           <button
-            onClick={() => dispatch(decrease())}
+            onClick={() =>  dispatch(decrease())}
             className="px-4 py-2 bg-red-500 text-white rounded-xl shadow hover:bg-red-600 transition">
        
             <FaMinus size={20} />
