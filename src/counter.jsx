@@ -28,8 +28,8 @@ export default function Counter() {
           rounded-2xl shadow-2xl p-10
           flex flex-col items-center gap-6
           transition-all duration-300
-        "
-      >
+        ">
+    
         {/* Theme toggle */}
         <button
           onClick={() => dispatch(toggleTheme())}
@@ -47,15 +47,15 @@ export default function Counter() {
         <div className="flex gap-4 mt-4">
           <button
             onClick={() => dispatch(increase())}
-            className="px-4 py-2 bg-green-500 text-white rounded-xl shadow hover:bg-green-600 transition"
-          >
+            className="px-4 py-2 bg-green-500 text-white rounded-xl shadow hover:bg-green-600 transition">
+     
             <FaPlus size={20} />
           </button>
 
           <button
             onClick={() => dispatch(decrease())}
-            className="px-4 py-2 bg-red-500 text-white rounded-xl shadow hover:bg-red-600 transition"
-          >
+            className="px-4 py-2 bg-red-500 text-white rounded-xl shadow hover:bg-red-600 transition">
+       
             <FaMinus size={20} />
           </button>
 
