@@ -33,8 +33,8 @@ export default function Counter() {
         {/* Theme toggle */}
         <button
           onClick={() => dispatch(toggleTheme())}
-          className="self-end p-2 rounded-lg hover:scale-110 transition"
-        >
+          className="self-end p-2 rounded-lg hover:scale-110 transition">
+        
           {mode === "light" ? (
             <CgToggleOff size={45} className="text-black" />
           ) : (
