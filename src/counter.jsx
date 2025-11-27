@@ -49,7 +49,7 @@ export default function Counter() {
             onClick={() => dispatch(increase())}
             className="px-4 py-2 bg-green-500 text-white rounded-xl shadow hover:bg-green-600 transition">
      
-            <FaPlus size={20} />
+            <FaPlus size={20}/>
           </button>
 
           <button
