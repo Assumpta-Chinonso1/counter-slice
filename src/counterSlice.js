@@ -32,6 +32,8 @@ const themeSlice = createSlice({
 
 export const {toggleTheme} = themeSlice.actions
 
+
+
 export const themeReducer = themeSlice.reducer
 export const counterReducer = counterSlice.reducer
 
