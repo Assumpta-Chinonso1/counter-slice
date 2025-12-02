@@ -27,7 +27,6 @@ const themeSlice = createSlice({
       state.mode = state.mode === "light" ? "dark" : "light"
     }
 
-    
   }
 })
 
