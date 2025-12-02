@@ -19,6 +19,8 @@ const counterSlice = createSlice({
 
 export const { increase, decrease, reset } = counterSlice.actions;
 
+
+
 const themeSlice = createSlice({
   name: "theme",
   initialState: {mode: "light"},
