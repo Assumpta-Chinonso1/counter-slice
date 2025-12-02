@@ -19,24 +19,48 @@ const counterSlice = createSlice({
 
 export const { increase, decrease, reset } = counterSlice.actions;
 
-
-//////////////////// THEME SLICE ////////////////////
 const themeSlice = createSlice({
   name: "theme",
-  initialState: { mode: "light" },
+  initialState: {mode: "light"},
   reducers: {
     toggleTheme: (state) => {
-      state.mode = state.mode === "light" ? "dark" : "light";
-    },
-  },
-});
+      state.mode = state.mode === "light" ? "dark" : "light"
+    }
 
-export const { toggleTheme } = themeSlice.actions;
+    
+  }
+})
 
 
-//////////////////// EXPORT REDUCERS ////////////////////
-export const counterReducer = counterSlice.reducer;
-export const themeReducer = themeSlice.reducer;
+export const {toggleTheme} = themeSlice.actions
+
+
+export const themeReducer = themeSlice.reducer
+
+export const counterReducer = counterSlice.reducer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
