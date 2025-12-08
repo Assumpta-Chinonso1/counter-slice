@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-/* Light mode default */
-body {
-  @apply bg-white text-black transition-all duration-300;
+.light {
+  background: white ;
+  color: black ;
 }
 
-/* Dark mode */
-.dark body {
-  @apply bg-gray-900 text-white transition-all duration-300;
+.dark {
+  background: #1a1a1a ;
+  color: white ;
 }
